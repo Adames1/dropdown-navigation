@@ -1,28 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  Features
-  Company
-  Careers
-  About
+  <!-- HEADER -->
+  <header class="header">
 
-  Login
-  Register
+    <!-- NAVEGATION -->
+    <nav>
+      <a href="#" class="nav-logo"><img src="./images/logo.svg" alt="Logo Snap"></a>
 
-  Make remote work
+      <!-- OVERLAY -->
+      <div class="overlay"></div>
 
-  Get your team in sync, no matter your location. Streamline processes,
-  create team rituals, and watch productivity soar.
+      <!-- MENU -->
+      <div class="nav-menu">
+        <button type="button" class="button-close" title="Close menu">
+          <img src="./images/icon-close-menu.svg" alt="Close menu">
+        </button>
+        <div class="nav-menu--sections">
+          <div class="nav-section">
+            <button type="button" class="button-head">
+              <span>Features</span>
+              <img src="./images/icon-arrow-up.svg" class="icon-up" alt="Icon Up">
+              <img src="./images/icon-arrow-down.svg" class="icon-down" alt="Icon down">
+            </button>
+            <ul class="nav-list--features nav-list">
+              <li class="nav-list--item">
+                <a href="#" class="nav-list--link">
+                  <img src="./images/icon-todo.svg" alt="Icon link">
+                  <span>Todo List</span>
+                </a>
+              </li>
+              <li class="nav-list--item">
+                <a href="#" class="nav-list--link">
+                  <img src="./images/icon-calendar.svg" alt="Icon link">
+                  <span>Calendar</span>
+                </a>
+              </li>
+              <li class="nav-list--item">
+                <a href="#" class="nav-list--link">
+                  <img src="./images/icon-reminders.svg" alt="Icon link">
+                  <span>Reminders</span>
+                </a>
+              </li>
+              <li class="nav-list--item">
+                <a href="#" class="nav-list--link">
+                  <img src="./images/icon-planning.svg" alt="Icon link">
+                  <span>Planning</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-section">
+            <button type="button" class="button-head">
+              <span>Company</span>
+              <img src="./images/icon-arrow-up.svg" class="icon-up" alt="Icon Up">
+              <img src="./images/icon-arrow-down.svg" class="icon-down" alt="Icon down">
+            </button>
+            <ul class="nav-list--company nav-list">
+              <li class="nav-list--item">
+                <a href="#" class="nav-list--link">History</a>
+              </li>
+              <li class="nav-list--item">
+                <a href="#" class="nav-list--link">Our Team</a>
+              </li>
+              <li class="nav-list--item">
+                <a href="#" class="nav-list--link">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="nav-list--others">
+            <li class="nav-list--item">
+              <a href="#" class="nav-list--link">Careers</a>
+            </li>
+            <li class="nav-list--item">
+              <a href="#" class="nav-list--link">About</a>
+            </li>
+          </ul>
+        </div>
+        <div class="buttons-actions">
+          <a href="#">Login</a>
+          <a href="#">Register</a>
+        </div>
+      </div>
+      <button type="button" class="button-menu" title="Open menu">
+        <img src="./images/icon-menu.svg" alt="Open menu">
+      </button>
+    </nav>
+    <!-- NAVEGATION -->
+  </header>
+  <!-- HEADER -->
 
-  Learn more
+  <!-- CONTENT MAIN -->
+  <main>
+    <section class="section-hero">
+      <div class="container container-hero">
+        <div class="img-hero">
+          <img src="./images/image-hero-mobile.png" class="image-hero-mobile" alt="">
+          <img src="./images/image-hero-desktop.png" class="image-hero-desktop" alt="">
+        </div>
+        <div class="section-hero--info">
+          <h1>Make remote work</h1>
+          <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
+            productivity soar.</p>
+          <a href="#" class="button-learmore">Learn more</a>
+          <div class="clients">
+            <img src="./images/client-databiz.svg" alt="">
+            <img src="./images/client-audiophile.svg" alt="">
+            <img src="./images/client-meet.svg" alt="">
+            <img src="./images/client-maker.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- CONTENT MAIN -->
+
   <script src="script.js"></script>
 </body>
+
 </html>
