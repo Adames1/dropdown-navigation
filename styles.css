@@ -282,10 +282,16 @@ nav {
   .container {
     max-width: 1400px;
     margin: auto;
+    padding: 0 var(--spacing-md);
   }
 
   .header {
     padding: var(--spacing-xl) var(--spacing-md);
+  }
+
+  nav .nav-logo {
+    display: flex;
+    align-items: center;
   }
 
   .button-menu,
@@ -297,13 +303,47 @@ nav {
     position: initial;
     width: 100%;
     background-color: transparent;
-    padding: var(--spacing-md);
     box-shadow: initial;
     z-index: initial;
     transform: translateX(0);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: var(--spacing-md);
+  }
+
+  .nav-section {
+    position: relative;
+  }
+
+  .nav-section .nav-list--features,
+  .nav-section .nav-list--company {
+    margin-left: initial;
+    width: max-content;
+    height: 0;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: var(--background-color);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 0;
+    border-radius: 8px;
+    opacity: 0;
+  }
+
+  .nav-section .nav-list--features.expand,
+  .nav-section .nav-list--company.expand {
+    height: auto;
+    opacity: 1;
+    padding: var(--spacing-sm);
+  }
+
+  .buttons-actions {
+    gap: var(--spacing-xl);
+  }
+
+  .buttons-actions a:nth-child(2) {
+    padding: var(--spacing-xs) var(--spacing-md);
   }
 
   .nav-menu--sections {
@@ -311,14 +351,17 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: var(--spacing-lg);
   }
 
   .nav-list--others {
     flex-direction: row;
+    gap: var(--spacing-lg);
   }
 
   .buttons-actions {
     flex-direction: row;
+    margin-top: 0;
   }
 
   .container-hero {
